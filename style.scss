@@ -1,0 +1,96 @@
+$bgcolor: black;
+$bgPage: white;
+$sideBar: pink;
+body {
+  background-color: $bgcolor;
+}
+
+.page {
+  background-color: $bgPage;
+  position: absolute;
+  width: 354px;
+  height: 593px;
+  top: 50%;
+  left: 50%;
+  padding: 20px 20px 20px 80px;
+  transform: translate(-50%, -50%);
+  .sideBar {
+    background-image: linear-gradient(180deg, #3ad5fd 0%, #b98cf9 100%);
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+h1 {
+  padding-left: 0;
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  transform: translateY(-7px);
+  li {
+    display: flex;
+    align-items: center;
+    margin: 33px auto;
+    margin-left: 9px;
+    &::before {
+      content: "";
+      background-image: linear-gradient(90deg, #3ad5fd 0%, #b98cf9 100%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      font-weight: bold;
+      display: inline-block;
+      position: relative;
+      left: -5px;
+      z-index: 1;
+      box-shadow: 0px 2px 2px rgba(41, 39, 55, 0.72),
+        inset 0 -1.5px 1px 0px #7492c4;
+    }
+  }
+}
+// a {
+//   color: red;
+//   &:link {
+//     color: red;
+//   }
+//   &:visited {
+//     color: darkred;
+//   }
+//   &:hover {
+//     color: tomato;
+//   }
+//   &:active {
+//     color: maroon;
+//   }
+// }
+// 1. Define colors as CSS Variables or SASS variables
+
+// 2. Have at least one nesting (see SASS lecture)
+
+// 3. Use at least of combinator (see Selectors lecture)
+
+// 4. For links use :link, :visited, :hover, :active
+
+// 5. Use :nth-child or :nth-last-child() or :nth-of-type
+
+// 6. Use ::selection
+
+// 7. Create on scroll animation with Intersection Observer
+
+// 8. Use transformation
+
+// 9. Use transition, set up all of Constituent properties
+
+// 10. Use animations and set up all of the sub-properties
+
+// EXTRA
+// 0. Use @extend (see SAAS lecture)
+// 1. Use of CSS Variables/SASS variables for other repeating values
+// 2. Use @mixin, @function, @include,
+// 3. Use of SASS feature like darken() etc.
